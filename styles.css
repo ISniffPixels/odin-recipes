@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    /* outline: 1px solid gray; */
+}
+
+body {
+    background-image: url(/odin-recipes/images/odin-food-bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    min-height: 100vh;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    line-height: 1.5;
+}
+
+.container-center {
+    background-color: burlywood;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    max-width: 950px;
+
+    height: auto;
+
+    margin: 45px auto;
+
+    border-radius: 10px;
+
+    box-shadow: 6px 6px 6px 6px rgb(0, 0, 0, 0.3);
+
+}
+
+.container-center .kitchen-header-image {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    border-radius: 0 0 10px 10px;
+}
+
+.container-center .overlay-footer-container {
+    position: relative;
+}
+
+.container-center .overlay-footer-container .overlay {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0 0 10px 10px;
+
+    font-family: "Macondo Swash Caps", Helvetica, cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+
+    text-transform: capitalize;
+
+    color: white;
+
+    background-color: rgb(0, 0, 0, 0.7);
+    
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+}
+
+.e-mail-sub-section {
+    display: flex;
+
+    gap: 10px;
+
+    margin: 20px 0;
+}
+
+.e-mail-sub-section .e-mail-input-style {
+    font-size: 20px;
+
+    padding: 20px;
+
+    border-radius: 10px;
+}
+
+.e-mail-sub-section .e-mail-button-style {
+    background-color: burlywood;
+
+    font-weight: bolder;
+    font-size: 20px;
+    font-variant: small-caps;
+
+    padding: 20px;
+
+    border-radius: 10px;
+}
+
+#banner-title {
+    font-family: "Macondo Swash Caps", Helvetica, cursive;
+    font-weight: 900;
+    font-style: normal;
+
+    text-transform: uppercase;
+
+    margin: 35px 0;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1.5rem;
+
+    padding: 20px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul li a {
+    font-family: "Macondo Swash Caps", Helvetica, cursive;
+    font-weight: 600;
+    font-style: normal;
+
+    color: black;
+
+    font-size: 20px;
+
+    text-decoration: none;
+}
+
+ul li a::before, ul li a::after {
+    content: "༒︎";
+    margin: 0 10px;
+}

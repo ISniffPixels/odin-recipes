@@ -3,13 +3,33 @@
     <head>
         <meta charset="UTF-8">
         <title>Odin Recipes</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles.css">
     </head>
 <body>
-    <h1>Odin Recipes</h1>
-    <ul>
-        <li><a href="recipes/california-cheescake.html">California Cheesecake</a></li>
-        <li><a href="recipes/chicken-avocado-pizza.html">Chicken Avocado Pizza</a></li>
-        <li><a href="recipes/chili-popcorn.html">Chili Popcorn</a></li>
-    </ul>
+    <div class="container-center">
+        <img src="images/odin-recipes-logo.png" width="400" height="auto" alt="odin-recipes-logo">
+        <h1 id="banner-title">Odin's Recipes</h1>
+        <ul>
+            <li><a href="recipes/chili-popcorn.html">Chili Popcorn</a></li>
+            <li><a href="recipes/california-cheescake.html">California Cheesecake</a></li>
+            <li><a href="recipes/chicken-avocado-pizza.html">Chicken Avocado Pizza</a></li>
+        </ul>
+        <div class="overlay-footer-container">
+                <div class="overlay">
+                    <h1>Subscribe</h1>
+                    <p>For more delicious recipe updates!</p>
+                    <div class="e-mail-sub-section">
+                        <input type="email" name="e-mail" id="e-mail"  placeholder="Enter your e-mail" class="e-mail-input-style">
+                        <input type="button" value="Submit" class="e-mail-button-style">
+                    </div>
+                </div>
+            <img src="images/subscribe-footer-overlay.png" alt="a picture of a kitchen table adorned with food" class="kitchen-header-image">
+        </div>
+    </div>
 </body>
 </html>
