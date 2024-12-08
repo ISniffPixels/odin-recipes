@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 
-    /* outline: 1px solid gray; */
+    outline: 1px solid gray;
 }
 
 body {
@@ -15,10 +15,21 @@ body {
     min-height: 100vh;
 
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
 
     line-height: 1.5;
 }
 
+h1,
+h2,
+h4 {
+    font-family: "Macondo Swash Caps", Helvetica, cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/* INDEX PAGE STYLES */
 .container-center {
     background-color: burlywood;
 
@@ -40,6 +51,17 @@ body {
 
     box-shadow: 6px 6px 6px 6px rgb(0, 0, 0, 0.3);
 
+}
+
+img {
+    display: block;
+
+    width: 400px;
+    height: auto;
+
+    border-radius: 10px;
+
+    box-shadow: 3px 3px 3px 3px rgb(0, 0, 0, 0.3);
 }
 
 .container-center .kitchen-header-image {
@@ -153,4 +175,57 @@ ul li a {
 ul li a::before, ul li a::after {
     content: "༒︎";
     margin: 0 10px;
+}
+
+/* RECIPES STYLES */
+ul li {
+    list-style-type: none;
+}
+
+.recipes-style li::before {
+    content: "🍽️";
+}
+
+.description-container {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin: 2.5rem 0;
+
+    justify-content: center;
+    align-items: center;
+
+    max-width: 600px;
+}
+
+.ingredients-container {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.ingredients-container .recipes-style {
+  display: inline-block;
+}
+
+.ingredients-container .recipes-style li {
+    margin-bottom: 10px;
+}
+
+.directions-container {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin: 2.5rem 0;
+
+    justify-content: center;
+    align-items: center;
+
+    max-width: 350px;
 }
