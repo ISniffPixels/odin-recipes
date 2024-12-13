@@ -1,7 +1,13 @@
-* {
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 
     /* outline: 1px solid gray; */
 }
@@ -11,13 +17,18 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
+    
+    max-width: 100%;
     min-height: 100vh;
 
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
 
     line-height: 1.5;
+}
+
+h1 {
+    margin: 30px;
 }
 
 h1,
@@ -34,7 +45,6 @@ h4 {
     background-color: burlywood;
 
     display: flex;
-
     flex-direction: column;
 
     align-items: center;
@@ -42,15 +52,12 @@ h4 {
 
     width: 100%;
     max-width: 950px;
-
     height: auto;
 
     margin: 45px auto;
-
     border-radius: 10px;
 
-    box-shadow: 6px 6px 6px 6px rgb(0, 0, 0, 0.3);
-
+    box-shadow: 3px 3px 3px 3px rgb(0, 0, 0, 0.2);
 }
 
 img {
@@ -61,7 +68,7 @@ img {
 
     border-radius: 10px;
 
-    box-shadow: 3px 3px 3px 3px rgb(0, 0, 0, 0.3);
+    box-shadow: 3px 3px 3px 3px rgb(0, 0, 0, 0.2);
 }
 
 .odin-logo {
