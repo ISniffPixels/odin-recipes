@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    background-image: url(/odin-recipes/images/odin-food-bg.webp);
+    background-image: url('./images/odin-food-bg.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
